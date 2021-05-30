@@ -109,6 +109,12 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+  .header__logo {
+    max-width: 10rem;
+    height: auto; }
+    @media only screen and (max-width: 620px) {
+      .header__logo {
+        max-width: 7rem; } }
   .header__nav {
     display: -webkit-box;
     display: -ms-flexbox;
