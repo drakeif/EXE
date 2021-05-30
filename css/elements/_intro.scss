@@ -16,7 +16,7 @@
         color: $white;
         @include media(768) {
             padding: 2rem;
-            background: rgba($ligth-dark, .1);
+            background: rgba($ligth-dark, .3);
             backdrop-filter: blur(5px);
         }
         h1 {
