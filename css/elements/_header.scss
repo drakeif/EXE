@@ -41,7 +41,8 @@
             left: 0;
             top: 105%;
             right: 0;
-            background: $ligth-dark;
+            background: rgba($ligth-dark, .1);
+            backdrop-filter: blur(5px);
             border-bottom: .1rem solid $accent;
             a {
                 font-size: 1.8rem;
@@ -54,6 +55,9 @@
             text-transform: uppercase;
             color: $gray;
             transition: .2s linear;
+            @include media(620) {
+                color: $white;
+            }
             &::before {
                 display: block;
                 content: '';
