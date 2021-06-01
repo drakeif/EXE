@@ -1,11 +1,16 @@
 // SCROLL BAR
-$track: #e5493a;
-$thumb: #5a5a5a;
-$hover: #202020;
+$track: #5a5a5a;
+$thumb: #e5493a ;
+$hover: #a70e00;
 // MAIN
 $ligth-dark: #252525;
 $strong-dark: #202020;
 $accent: #e5493a;
 $gray: #707070;
+$gray-2: #636363;
 $white: #ffffff;
 $green: #8dc63f;
+//MIXIN
+@mixin trs {
+    transition: .2s linear;
+}

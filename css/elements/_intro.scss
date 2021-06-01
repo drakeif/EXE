@@ -94,7 +94,7 @@
             padding: 2rem 3rem;
             border-radius: .5rem;
             border: .2rem solid transparent;
-            transition: .2s linear;
+            @include trs;
             @include media(500) {
                 width: 100%;
                 padding: 1rem;
