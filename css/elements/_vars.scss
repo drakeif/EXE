@@ -14,3 +14,8 @@ $green: #8dc63f;
 @mixin trs {
     transition: .2s linear;
 }
+@mixin bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
