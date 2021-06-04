@@ -1,0 +1,19 @@
+.skills {
+    padding-top: 10rem;
+    background: $ligth-dark;
+    &__design {
+        overflow: hidden;
+    }
+    &__devices {
+        max-width: 62rem;
+        height: 57rem;
+        position: relative;
+        img {
+           &:nth-child(2) {
+               position: absolute;
+               bottom: -7rem;
+               right: -12rem;
+           } 
+        }
+    }
+}

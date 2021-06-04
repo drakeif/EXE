@@ -6,6 +6,7 @@
     width: 100%;
     top: 0;
     left: 0;
+    @include trs;
     z-index: 999;
     @include media(1000) {
         padding: 4rem 0;
@@ -145,5 +146,8 @@
                 background: $accent;
             }
         }
+    }
+    &.active {
+        padding: 1rem 0;
     }
 }

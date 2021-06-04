@@ -16,3 +16,15 @@ const burger = document.getElementById('burger'),
         body.classList.remove('active');
         burger.classList.remove('active')
       }));
+// WAYPOINT
+let waypoint = new Waypoint({
+  element: document.getElementById('features'),
+  handler: function(direction) {
+    let header = document.getElementById('header');
+    if(direction === 'down') {
+      header.classList.add('active');
+    } else {
+      header.classList.remove('active');
+    }
+  }
+});
