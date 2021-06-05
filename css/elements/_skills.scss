@@ -33,7 +33,7 @@
                position: absolute;
                bottom: -7rem;
                right: -12rem;
-               @include media(786) {
+               @include media(768) {
                    display: none;
                }
            } 
