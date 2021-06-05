@@ -665,15 +665,172 @@ img {
 .skills {
   padding-top: 10rem;
   background: #252525; }
-  .skills__design {
-    overflow: hidden; }
+  @media only screen and (max-width: 768px) {
+    .skills {
+      padding: 5rem 0; } }
+  @media only screen and (max-width: 550px) {
+    .skills {
+      padding: 2.5rem 0; } }
+  .skills__wrap {
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: relative; }
+    @media only screen and (max-width: 768px) {
+      .skills__wrap {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
   .skills__devices {
     max-width: 62rem;
     height: 57rem;
     position: relative; }
+    @media only screen and (max-width: 768px) {
+      .skills__devices {
+        overflow: hidden; } }
+    @media only screen and (max-width: 550px) {
+      .skills__devices {
+        height: auto; } }
     .skills__devices img:nth-child(2) {
       position: absolute;
       bottom: -7rem;
       right: -12rem; }
+      @media only screen and (max-width: 786px) {
+        .skills__devices img:nth-child(2) {
+          display: none; } }
+  .skills__info {
+    max-width: 35rem;
+    z-index: 1; }
+    @media only screen and (max-width: 768px) {
+      .skills__info {
+        max-width: 50rem;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        padding: 1rem;
+        -webkit-backdrop-filter: blur(0.5rem);
+                backdrop-filter: blur(0.5rem); } }
+    @media only screen and (max-width: 550px) {
+      .skills__info {
+        max-width: 40rem; } }
+    @media only screen and (max-width: 400px) {
+      .skills__info {
+        max-width: 32rem; } }
+    .skills__info h3 {
+      font-size: 3rem;
+      color: #ffffff;
+      text-transform: uppercase;
+      margin-bottom: 3rem; }
+      @media only screen and (max-width: 550px) {
+        .skills__info h3 {
+          font-size: 2.4rem;
+          margin-bottom: 1rem; } }
+      @media only screen and (max-width: 400px) {
+        .skills__info h3 {
+          font-size: 1.6rem; } }
+      .skills__info h3::before {
+        display: block;
+        content: '';
+        background: #636363;
+        width: 7rem;
+        height: 2px;
+        margin-bottom: 3rem; }
+        @media only screen and (max-width: 768px) {
+          .skills__info h3::before {
+            display: none; } }
+    .skills__info p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: #636363;
+      line-height: 1.5;
+      margin-bottom: 3rem; }
+      @media only screen and (max-width: 768px) {
+        .skills__info p {
+          color: #ffffff; } }
+      @media only screen and (max-width: 550px) {
+        .skills__info p {
+          font-size: 1.2rem;
+          margin-bottom: 1rem; } }
+      @media only screen and (max-width: 400px) {
+        .skills__info p {
+          font-size: 1rem; } }
+    .skills__info ul {
+      padding-left: 2rem;
+      list-style: none;
+      margin-bottom: 5rem; }
+      @media only screen and (max-width: 550px) {
+        .skills__info ul {
+          margin-bottom: 2.5rem; } }
+      @media only screen and (max-width: 400px) {
+        .skills__info ul {
+          margin-bottom: 1.5rem; } }
+      .skills__info ul li {
+        position: relative;
+        color: #959595;
+        padding-left: 2rem; }
+        @media only screen and (max-width: 768px) {
+          .skills__info ul li {
+            color: #e5493a; } }
+        @media only screen and (max-width: 550px) {
+          .skills__info ul li {
+            font-size: 1.2rem; } }
+        @media only screen and (max-width: 400px) {
+          .skills__info ul li {
+            font-size: 1rem; } }
+        .skills__info ul li:not(:last-child) {
+          margin-bottom: 2.5rem; }
+          @media only screen and (max-width: 550px) {
+            .skills__info ul li:not(:last-child) {
+              margin-bottom: 1rem; } }
+        .skills__info ul li:before {
+          display: block;
+          content: '';
+          background: url("../img/forlist.png") no-repeat center;
+          width: 0.8rem;
+          height: 0.2rem;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+                  transform: translateY(-50%); }
+    .skills__info a {
+      display: inline-block;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #ffffff;
+      font-size: 1.4rem;
+      font-weight: 700;
+      background: #8dc63f;
+      padding: 2rem 3rem;
+      border: 0.1rem solid #8dc63f;
+      border-radius: 0.5rem;
+      -webkit-transition: .2s linear;
+      transition: .2s linear; }
+      .skills__info a:hover {
+        background: transparent; }
+      @media only screen and (max-width: 768px) {
+        .skills__info a {
+          display: block;
+          text-align: center;
+          padding: 1rem 1.5rem; } }
+      @media only screen and (max-width: 550px) {
+        .skills__info a {
+          font-size: 1.2rem;
+          padding: 0.5rem 1.5rem; } }
 
 /*# sourceMappingURL=main.css.map */
