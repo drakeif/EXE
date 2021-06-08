@@ -1242,7 +1242,14 @@ img {
   .clients__slide {
     height: 10rem;
     display: grid;
-    place-items: center; }
+    place-items: center;
+    cursor: pointer; }
+    .clients__slide img {
+      opacity: .3;
+      -webkit-transition: .2s linear;
+      transition: .2s linear; }
+    .clients__slide:hover img {
+      opacity: 1; }
 
 .swiper-pagination {
   position: relative !important;
