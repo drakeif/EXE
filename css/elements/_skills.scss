@@ -117,10 +117,19 @@
                 left: .3rem;
             }
         }
-    }
-    &--percent-1 {
-        width: 95%;
-        &_95 {
+        &_line--95 {
+            width: 95%;
+        }
+        &_line--50 {
+            width: 50%;
+        }
+        &_line--75 {
+            width: 75%;
+        }
+        &_line--61 {
+            width: 61%;
+        }
+        &_value {
             display: inline-block;
             font-family: 'Roboto', sans-serif;
             font-size: 1.2rem;
@@ -145,14 +154,5 @@
                 z-index: -1;
             }
         }
-    }
-    &--percent-2 {
-        width: 50%;        
-    }   
-    &--percent-3 {
-        width: 72%;
-    }
-    &--percent-4 {
-        width: 36%;
-    }
+    }  
 }

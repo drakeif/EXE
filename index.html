@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EXE</title>
     <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
 </head>
 <body id="body">
@@ -21,8 +22,8 @@
                     <a href="#features">features</a>
                     <a href="#portfolio">portfolio</a>
                     <a href="#skills">skills</a>
-                    <a href="#!">blog</a>
-                    <a href="#!">clients</a>
+                    <a href="#blog">blog</a>
+                    <a href="#clients">clients</a>
                     <a href="#!">contacts</a>
                 </nav>
                 <div class="header__burger" id="burger">
@@ -229,32 +230,32 @@
                     <div class="skills__progress_element">
                         <h4>photoshop</h4>
                         <div class="skills__progress_bar">
-                            <span class="skills--percent-1">
-                                <div class="skills--percent-1_95">95%</div>
+                            <span class="skills__progress_line--95">
+                                <div class="skills__progress_value">95%</div>
                             </span>
                         </div>
                     </div>
                     <div class="skills__progress_element">
                         <h4>wordpress</h4>
                         <div class="skills__progress_bar">
-                            <span class="skills--percent-2">
-                                <div class="skills--percent-1_95">50%</div>
+                            <span class="skills__progress_line--50">
+                                <div class="skills__progress_value">50%</div>
                             </span>
                         </div>
                     </div>
                     <div class="skills__progress_element">
                         <h4>ecommerce</h4>
                         <div class="skills__progress_bar">
-                            <span class="skills--percent-3">
-                                <div class="skills--percent-1_95">72%</div>
+                            <span class="skills__progress_line--75">
+                                <div class="skills__progress_value">72%</div>
                             </span>
                         </div>
                     </div>
                     <div class="skills__progress_element">
                         <h4>photography</h4>
                         <div class="skills__progress_bar">
-                            <span class="skills--percent-4">
-                                <div class="skills--percent-1_95">36%</div>
+                            <span class="skills__progress_line--61">
+                                <div class="skills__progress_value">61%</div>
                             </span>
                         </div>
                     </div>
@@ -262,9 +263,143 @@
             </div>
         </div>
     </div>
+    <!-- BLOG -->
+    <div class="blog" id="blog">
+        <div class="container">
+            <div class="blog__wrap">
+                <div class="blog__block">
+                    <div class="blog__content">
+                        <div class="blog__icon">
+                            <svg class="sprite-b">
+                                <use xlink:href="../img/svg/sprite/sprite.svg#gallary"></use>
+                            </svg>
+                        </div>
+                        <div class="blog__info">
+                            <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h3>
+                            <p>04 February 2015, Posted by <span>Admin</span>, Comments: <span>26</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__block">
+                    <div class="blog__about">
+                        <h3>Latest Blog Posts</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum nobis videntur parum.</p>
+                    </div>
+                </div>
+                <div class="blog__block">
+                    <div class="blog__content">
+                        <div class="blog__icon">
+                            <svg class="sprite-b">
+                                <use xlink:href="../img/svg/sprite/sprite.svg#picture"></use>
+                            </svg>
+                        </div>
+                        <div class="blog__info">
+                            <h3>Nam liber tempor</h3>
+                            <p>07 june 2020, Posted by <span>john doe</span>, Comments: <span>26</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__block">
+                    <div class="blog__content">
+                        <div class="blog__icon">
+                            <svg class="sprite-b">
+                                <use xlink:href="../img/svg/sprite/sprite.svg#gallary"></use>
+                            </svg>
+                        </div>
+                        <div class="blog__info">
+                            <h3>Lorem</h3>
+                            <p>29 april 2015, Posted by <span>crringe</span>, Comments: <span>26</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__block">
+                    <div class="blog__content">
+                        <div class="blog__icon">
+                            <svg class="sprite-b">
+                                <use xlink:href="../img/svg/sprite/sprite.svg#movie"></use>
+                            </svg>
+                        </div>
+                        <div class="blog__info">
+                            <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h3>
+                            <p>04 February 2021, Posted by <span>drake bell</span>, Comments: <span>26</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CLIENTS -->
+    <div class="clients" id="clients">
+        <div class="container">
+            <div class="clients__wrap">
+                <div class="clients__about">
+                   <div class="clients__info">
+                    <h3>our happy clients</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Claritas est etiam processus dynamicus.</p>
+                   </div>
+                </div>
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <div class="clients__slide">
+                              <img src="./img/client1.png" alt="client1">
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="clients__slide">
+                            <img src="./img/client2.png" alt="client2">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="clients__slide">
+                            <img src="./img/client3.png" alt="client3">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="clients__slide">
+                            <img src="./img/client4.png" alt="client4">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="clients__slide">
+                            <img src="./img/client5.png" alt="client5">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="clients__slide">
+                            <img src="./img/client1.png" alt="client1">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="clients__slide">
+                          <img src="./img/client2.png" alt="client2">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="clients__slide">
+                          <img src="./img/client3.png" alt="client3">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="clients__slide">
+                          <img src="./img/client4.png" alt="client4">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="clients__slide">
+                          <img src="./img/client5.png" alt="client5">
+                      </div>
+                    </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+        </div>
+    </div>
 
     <!-- SCRIPT -->
     <script src="./js/waypoints.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/app.min.js"></script>
 </body>
 </html>
