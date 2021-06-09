@@ -64,6 +64,7 @@
             text-decoration: none;
             text-transform: uppercase;
             color: $gray;
+            font-size: 1.4rem;
             @include trs;
             &::before {
                 display: block;

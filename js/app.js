@@ -56,3 +56,10 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+// COUNT TEXTAREA
+const textarea = document.getElementById('textarea'),
+      label = document.getElementById('label');
+
+      textarea.addEventListener('keyup', () => {
+        label.innerHTML = textarea.value.length;
+      });
