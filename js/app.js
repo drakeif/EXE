@@ -63,3 +63,15 @@ const textarea = document.getElementById('textarea'),
       textarea.addEventListener('keyup', () => {
         label.innerHTML = textarea.value.length;
       });
+// SKILLS ANIMATION
+$(function () {
+	$(window).scroll(function() {
+	    $('.skills').each(function(){
+	        var imagePos = $(this).offset().top;
+	        var topOfWindow = $(window).scrollTop();
+	        if (imagePos < topOfWindow+300) {
+	            $(this).addClass("active");
+	        }
+	    });
+	});
+})

@@ -945,13 +945,53 @@ img {
                 transform: translateY(-50%);
         left: .3rem; }
     .skills__progress_line--95 {
-      width: 95%; }
+      width: 0%; }
+@-webkit-keyframes line-95 {
+  from {
+    width: 0%; }
+  to {
+    width: 95%; } }
+@keyframes line-95 {
+  from {
+    width: 0%; }
+  to {
+    width: 95%; } }
     .skills__progress_line--50 {
-      width: 50%; }
+      width: 0%; }
+@-webkit-keyframes line-50 {
+  from {
+    width: 0%; }
+  to {
+    width: 50%; } }
+@keyframes line-50 {
+  from {
+    width: 0%; }
+  to {
+    width: 50%; } }
     .skills__progress_line--75 {
-      width: 75%; }
+      width: 0%; }
+@-webkit-keyframes line-75 {
+  from {
+    width: 0%; }
+  to {
+    width: 75%; } }
+@keyframes line-75 {
+  from {
+    width: 0%; }
+  to {
+    width: 75%; } }
     .skills__progress_line--61 {
-      width: 61%; }
+      width: 0%; }
+@-webkit-keyframes line-61 {
+  from {
+    width: 0%; }
+  to {
+    width: 61%; } }
+@keyframes line-61 {
+  from {
+    width: 0%; }
+  to {
+    width: 61%; } }
     .skills__progress_value {
       display: inline-block;
       font-family: 'Roboto', sans-serif;
@@ -976,6 +1016,18 @@ img {
         top: 1.8rem;
         right: 1.5rem;
         z-index: -1; }
+  .skills.active .skills__progress_line--95 {
+    -webkit-animation: line-95 forwards ease-out 2s;
+            animation: line-95 forwards ease-out 2s; }
+  .skills.active .skills__progress_line--50 {
+    -webkit-animation: line-50 forwards ease-out 2s;
+            animation: line-50 forwards ease-out 2s; }
+  .skills.active .skills__progress_line--75 {
+    -webkit-animation: line-75 forwards ease-out 2s;
+            animation: line-75 forwards ease-out 2s; }
+  .skills.active .skills__progress_line--61 {
+    -webkit-animation: line-61 forwards ease-out 2s;
+            animation: line-61 forwards ease-out 2s; }
 
 .blog {
   padding: 12rem 0 15rem 0;
