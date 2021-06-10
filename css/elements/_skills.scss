@@ -1,0 +1,204 @@
+.skills {
+    padding: 8rem 0;
+    background: $accent;
+    @include media(768) {
+        padding: 5rem 0;
+    }
+    @include media(550) {
+        padding: 3rem 0;
+    }
+    &__wrap {
+        display: flex;
+        column-gap: 10rem;
+        align-items: center;
+        @include media(768) {
+            flex-direction: column;
+            row-gap: 5rem;
+        }
+    }
+    &__info {
+        max-width: 27rem;
+        @include media(768) {
+            max-width: 100%;
+        }
+        h3 {
+            font-size: 3rem;
+            color: $white;
+            text-transform: uppercase;
+            margin-bottom: 3rem;
+            @include media(550) {
+                font-size: 2.4rem;
+                margin-bottom: 1rem;
+            }
+            @include media(400) {
+                font-size: 1.6rem;
+            }
+            &::before {
+                display: block;
+                content: '';
+                background: $white;
+                width: 7rem;
+                height: 2px;
+                margin-bottom: 3rem;
+                @include media(768) {
+                    display: none;
+                }
+            }
+        }
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: $white;
+            line-height: 1.5;
+            margin-bottom: 3rem;
+            @include media(550) {
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+            }
+            @include media(400) {
+                font-size: 1rem;
+            }
+        }
+        a {
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $white;
+            font-size: 1.4rem;
+            font-weight: 700;
+            background: $ligth-dark;
+            padding: 2rem 3rem;
+            border: 0.1rem solid $ligth-dark;
+            border-radius: 0.5rem;
+            @include trs;
+            &:hover {
+               background: $green;
+               border: 0.1rem solid $green;
+            }
+            @include media(768) {
+                display: block;
+                text-align: center;
+                padding: 1rem 1.5rem;
+            }
+            @include media(550) {
+                font-size: 1.2rem;
+                padding: 0.5rem 1.5rem;
+               
+            }
+        }
+    }
+    &__progress {
+        width: 100%;
+        &_element {
+            &:not(:last-child) {
+                margin-bottom: 1.5rem;
+            }
+            h4 {
+                color: $white;
+                text-transform: uppercase;
+                font-size: 1.4rem;
+                margin-bottom: 0.7rem;
+            }
+        }
+        &_bar {
+            padding: .3rem 0;
+            border: .1rem solid rgba($white, .5);
+            border-radius: .5rem;
+            position: relative;  
+            span {
+                display: inline-block;
+                background: $white;
+                opacity: 1;
+                height: .2rem;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: .3rem;
+            }
+        }
+        &_line--95 {
+            width: 0%;
+        }
+        @keyframes line-95 {
+            from {
+                width: 0%;
+            }
+            to {
+                width: 95%;
+            }
+        }
+        &_line--50 {
+            width: 0%;
+        }
+        @keyframes line-50 {
+            from {
+                width: 0%;
+            }
+            to {
+                width: 50%;
+            }
+        }
+        &_line--75 {
+            width: 0%;
+        }
+        @keyframes line-75 {
+            from {
+                width: 0%;
+            }
+            to {
+                width: 75%;
+            }
+        }
+        &_line--61 {
+            width: 0%;
+        }
+        @keyframes line-61 {
+            from {
+                width: 0%;
+            }
+            to {
+                width: 61%;
+            }
+        }
+        &_value {
+            display: inline-block;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: white;
+            background: $ligth-dark;
+            border-radius: .5rem;
+            padding: .4rem .6rem;
+            position: absolute;
+            right: -1rem;
+            bottom: 1.5rem;
+            &:after {
+                display: block;
+                content: '';
+                background: $ligth-dark;
+                width: .7rem;
+                height: .7rem;
+                transform: rotate(45deg);
+                position: absolute;
+                top: 1.8rem;
+                right: 1.5rem;
+                z-index: -1;
+            }
+        }
+    }
+    &.active {
+        .skills__progress_line--95 {
+            animation: line-95 forwards ease-out 2s;
+        }
+        .skills__progress_line--50 {
+            animation: line-50 forwards ease-out 2s;
+        }
+        .skills__progress_line--75 {
+            animation: line-75 forwards ease-out 2s;
+        }
+        .skills__progress_line--61 {
+            animation: line-61 forwards ease-out 2s;
+        }
+    }
+}

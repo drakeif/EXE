@@ -1,0 +1,65 @@
+.footer {
+    background: $strong-dark;
+    padding: 3rem 0;
+    @include media(768) {
+        padding: 2rem 0;
+    }
+    @include media(620) {
+        padding: 1.5rem 0;
+    }
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+        @include media(390) {
+            row-gap: .7rem;
+        }
+    }
+    &__nav {
+        display: flex;
+        column-gap: 3rem;
+        @include media(768) {
+            column-gap: 1.5rem;
+        }
+        @include media(450) {
+            column-gap: .5rem;
+        }
+        a {
+            color: $gray;
+            font-size: 1.4rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            @include trs;
+            @include media(550) {
+                font-size: 1.2rem
+            }
+            @include media(390) {
+                font-size: .9rem
+            }
+            &:hover {
+                color: $accent;
+            }
+        }
+    }
+    &__copy {
+        color: $white;
+        font-size: 1.2rem;
+        font-weight: 300;
+        @include media(390) {
+            font-size: 1rem
+        }
+        a {
+            font-size: 1.2rem;
+            color: $accent;
+            text-decoration: none;
+            @include trs;
+            @include media(390) {
+                font-size: 1rem
+            }
+            &:hover {
+                color: $green;
+            }
+        }
+    }
+}
