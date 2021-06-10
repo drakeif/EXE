@@ -63,3 +63,16 @@ const textarea = document.getElementById('textarea'),
       textarea.addEventListener('keyup', () => {
         label.innerHTML = textarea.value.length;
       });
+// SKILLS ANIMATE
+const skills = document.querySelectorAll('.skills');
+
+window.addEventListener('scroll', () => {
+    skills.forEach((element) => {
+        let skillsPos = element.offsetTop;
+        let topOfWindow = window.scrollY;
+
+        if (skillsPos < topOfWindow + 400) {
+          element.classList.add('active');
+        };
+    });
+});
