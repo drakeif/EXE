@@ -76,3 +76,19 @@ window.addEventListener('scroll', () => {
         };
     });
 });
+// SEND
+const send = document.getElementById('send'),
+      home = document.getElementById('toHome');
+
+send.addEventListener('click', () => {
+  send.innerHTML = 'sending..'
+  setTimeout(() => {
+    send.innerHTML = 'OK'
+  },1000);
+  setTimeout(() => {
+    home.click();
+  },2000);
+  setTimeout(() => {
+    window.location.reload();
+  },3000)
+});
