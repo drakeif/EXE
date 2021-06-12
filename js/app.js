@@ -90,5 +90,6 @@ send.addEventListener('click', () => {
   },2000);
   setTimeout(() => {
     window.location.reload();
-  },3000)
+    alert('Ви тепер ҐЕЙ')
+  },3000);
 });
