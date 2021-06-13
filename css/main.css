@@ -1490,7 +1490,7 @@ img {
         cursor: pointer;
         -webkit-transition: .2s linear;
         transition: .2s linear; }
-        .contacts__form form button:hover {
+        .contacts__form form button:hover, .contacts__form form button:focus {
           background: #8dc63f; }
         @media only screen and (max-width: 620px) {
           .contacts__form form button {

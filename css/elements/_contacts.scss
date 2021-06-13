@@ -137,7 +137,7 @@
                 border-radius: .5rem;
                 cursor: pointer;
                 @include trs;
-                &:hover {
+                &:hover, &:focus {
                     background: $green;
                 }
                 @include media(620) {
