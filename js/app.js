@@ -80,10 +80,10 @@ window.addEventListener('scroll', () => {
 const send = document.getElementById('send'),
       home = document.getElementById('toHome');
 
-send.addEventListener('click', () => {
-  send.innerHTML = 'sending..'
+send.addEventListener('click', (e) => {
+  e.target.innerHTML = 'sending..'
   setTimeout(() => {
-    send.innerHTML = 'OK'
+    e.target.innerHTML = 'OK'
   },1000);
   setTimeout(() => {
     home.click();
