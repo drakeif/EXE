@@ -1308,6 +1308,9 @@ img {
   position: relative !important;
   margin-top: 3rem !important; }
 
+.mySwiper {
+  overflow: hidden; }
+
 .contacts {
   position: relative; }
   .contacts__wrap {
