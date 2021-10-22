@@ -90,6 +90,6 @@ send.addEventListener('click', (e) => {
   },2000);
   setTimeout(() => {
     window.location.reload();
-    alert('Ви тепер ҐЄЙ')
+    alert('Well Done')
   },3000);
 });
